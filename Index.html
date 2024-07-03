@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="./input/loginimg.png" alt="Login Icon">
+            <h2>Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username...">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password...">
+              </div>
+              <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="dashboard">
+            <nav class="sidebar">
+                <ul>
+                    <li class="sidebar-item active"><a href="#">Dashboard</a></li>
+                    <li class="sidebar-item"><a href="#">All Invoices</a></li>
+                </ul>
+            </nav>
+            <div class="main-content">
+                <header class="header">
+                    <button class="logout">Logout</button>
+                </header>
+                <div class="content">
+                    <div class="add-invoice">
+                        <h2>Add Invoice</h2>
+                        <div class="upload">
+                            <div class="upload-box">
+                                <button class="upload-btn">Choose File</button>
+                                <p>Drop invoice here or Choose file from your device</p>
+                            </div>
+                            <form>
+                                <label for="invoice-number">Invoice Number</label>
+                                <input type="text" id="invoice-number" placeholder="Invoice Number here...">
+                                <label for="invoice-detail">Invoice Detail</label>
+                                <input type="text" id="invoice-detail" placeholder="Write Detail here...">
+                                <label for="invoice-amount">Invoice Amount</label>
+                                <input type="text" id="invoice-amount" placeholder="Amount...">
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <h2>Summary</h2>
+                        <div class="summary-filters">
+                            <input type="text" placeholder="Search...">
+                            <input type="date" id="start-date">
+                            <input type="date" id="end-date">
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Invoice Details</th>
+                                    <th>Submission Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>iPhone 14</td>
+                                    <td>Tue, 11 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone SE</td>
+                                    <td>Tue, 10 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Mac Mini</td>
+                                    <td>Tue, 9 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 13 pro</td>
+                                    <td>Tue, 10 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Macbook air</td>
+                                    <td>Tue, 9 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 12 mini</td>
+                                    <td>Tue, 10 Apr. 2023</td>
+                                    <td>₹ 70,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboardtwo">
+            <nav class="sidebartwo">
+                <ul>
+                    <li class="sidebar-itemtwo active"><a href="#">Dashboard</a></li>
+                    <li class="sidebar-itemtwo"><a href="#">Invoices</a></li>
+                    <li class="sidebar-itemtwo"><a href="#">Vendors</a></li>
+                </ul>
+            </nav>
+            <div class="main-contenttwo">
+                <header class="headertwo">
+                    <button class="logout">Logout</button>
+                </header>
+                <div class="contenttwo">
+                    <div class="stats">
+                        <div class="stat-card high-priority">
+                            <h3>High Priority</h3>
+                            <p>06 Invoices</p>
+                            <p class="amount">₹ 25,000</p>
+                        </div>
+                        <div class="stat-card medium-priority">
+                            <h3>Medium Priority</h3>
+                            <p>01 Invoices</p>
+                            <p class="amount">₹ 10,000</p>
+                        </div>
+                        <div class="stat-card low-priority">
+                            <h3>Low Priority</h3>
+                            <p>02 Invoices</p>
+                            <p class="amount">₹ 20,000</p>
+                        </div>
+                    </div>
+                    <div class="content-second">
+                        <div class="invoices-summary">
+                            <div class="search-and-filter">
+                                <input type="text" placeholder="Search by name or invoice...">
+                                <div class="filter-options">
+                                    <select>
+                                        <option>Status</option>
+                                        <option>Paid</option>
+                                        <option>Due</option>
+                                    </select>
+                                    <input type="date">
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Invoice Details</th>
+                                        <th>Submission Date</th>
+                                        <th>Due Date</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>iPhone Invoice #1122</td>
+                                        <td>11 Apr. 2023</td>
+                                        <td>22 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status due">Due</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samsung Invoice #1123</td>
+                                        <td>10 Apr. 2023</td>
+                                        <td>20 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status due">Due</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Google Invoice #1124</td>
+                                        <td>9 Apr. 2023</td>
+                                        <td>18 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status due">Due</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple Invoice #1123</td>
+                                        <td>10 Apr. 2023</td>
+                                        <td>20 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status paid">Paid</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Google Invoice #1124</td>
+                                        <td>9 Apr. 2023</td>
+                                        <td>18 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status paid">Paid</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samsung Invoice #1123</td>
+                                        <td>10 Apr. 2023</td>
+                                        <td>20 Jul. 2023</td>
+                                        <td>₹ 80,000</td>
+                                        <td><span class="status paid">Paid</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="recents">
+                            <h3>Recents</h3>
+                            <ul>
+                                <li><span>₹ 20,000 02 Invoices</span><span>From Apple Inc.</span><span>23 Jun. 2023</span></li>
+                                <li><span>₹ 10,000 01 Invoices</span><span>From Google LLC</span><span>22 Jun. 2023</span></li>
+                                <li><span>₹ 60,000 04 Invoices</span><span>From Samsung Inc.</span><span>21 Jun. 2023</span></li>
+                                <li><span>₹ 30,000 03 Invoices</span><span>From Apple Inc.</span><span>21 Jun. 2023</span></li>
+                                <li><span>₹ 20,000 02 Invoices</span><span>From Samsung Inc.</span><span>20 Jun. 2023</span></li>
+                                <li><span>₹ 10,000 01 Invoices</span><span>From Google LLC</span><span>20 Jun. 2023</span></li>
+                            </ul>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="containerthree">
+            <aside class="sidebarthree">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Invoices</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </nav>
+            </aside>
+    
+            <main class="main-contentthree">
+                <header class="headerthree">
+                    <h1>Vendors / Apple</h1>
+                    <button class="logout-btn">Logout</button>
+                </header>
+    
+                <div class="contentthree">
+                    <div class="content-headerthree">
+                        <button class="add-vendor-btn">+ Add Vendor</button>
+                        <input type="text" class="search-input" placeholder="Search by name or invoice...">
+                        <select class="status-filter">
+                            <option value="">Status</option>
+                            <option value="due">Due</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                        <input type="date" class="date-filter">
+                    </div>
+    
+                    <div class="invoice-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Invoice details</th>
+                                    <th>Submission date</th>
+                                    <th>Due date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked> iPhone 14<br>Invoice #1122
+                                    </td>
+                                    <td>11 Apr. 2023</td>
+                                    <td>22 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status due">Due</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked> iPhone SE<br>Invoice #1123
+                                    </td>
+                                    <td>10 Apr. 2023</td>
+                                    <td>20 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status due">Due</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked> Mac Mini<br>Invoice #1124
+                                    </td>
+                                    <td>9 Apr. 2023</td>
+                                    <td>18 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status due">Due</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked> iPhone 13 pro<br>Invoice #1123
+                                    </td>
+                                    <td>10 Apr. 2023</td>
+                                    <td>20 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status due">Due</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"> Macbook air<br>Invoice #1124
+                                    </td>
+                                    <td>9 Apr. 2023</td>
+                                    <td>18 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status paid">Paid</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked> iPhone 12 mini<br>Invoice #1123
+                                    </td>
+                                    <td>10 Apr. 2023</td>
+                                    <td>20 Jul. 2023</td>
+                                    <td>₹ 80,000</td>
+                                    <td><span class="status paid">Paid</span></td>
+                                    <td><button class="download-btn">⇩</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div class="invoice-details">
+                        <h3>Invoice: #1122</h3>
+                        <a href="#" class="download-link">Download Invoice</a>
+                        <p>Submission Date: 22 Jun. 2023</p>
+                        <p>Invoice Detail: iPhone 14 Invoice</p>
+                        <p>Invoice Amount: ₹ 80,000</p>
+                        <textarea placeholder="Add comments here..."></textarea>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+      
+</html>
